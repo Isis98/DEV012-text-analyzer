@@ -1,3 +1,4 @@
+const text = document.querySelector('textarea');
 const analyzer = {  
   getWordCount: (text) => {
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
