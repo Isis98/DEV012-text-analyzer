@@ -1,10 +1,19 @@
-const text = document.querySelector('textarea');
+
 const analyzer = {  
   getWordCount: (text) => {
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
+  const splitWords = text.trimStart().trimEnd().split(/\s+/);
+  const wordsCount = splitWords.length;
+    
+  return wordsCount;
   },
   getCharacterCount: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
+    const splitCharacters = text.split("");
+    
+    const charactersCount = splitCharacters.length;
+    
+    return charactersCount
   },
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
